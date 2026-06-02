@@ -1,0 +1,17 @@
+-e .
+
+# Notebook runtime
+ipykernel
+jupyterlab
+
+# Core scientific/image stack
+matplotlib
+numpy
+pillow
+opencv-python
+scikit-learn
+tqdm
+
+# Development
+pytest
+ruff

@@ -170,6 +170,15 @@ cython_debug/
 # Ruff stuff:
 .ruff_cache/
 
+# Model weights and downloaded model artifacts
+data/models/*
+!data/models/.gitkeep
+*.ckpt
+*.onnx
+*.pth
+*.pt
+*.safetensors
+
 # PyPI configuration file
 .pypirc
 
