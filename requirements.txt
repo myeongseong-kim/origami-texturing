@@ -29,3 +29,7 @@ termcolor
 # Development
 pytest
 ruff
+python-dotenv
+
+# OpenAI API
+openaiopenai
