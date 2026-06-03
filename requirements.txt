@@ -13,6 +13,18 @@ opencv-python
 scikit-learn
 tqdm
 
+# PyTorch
+torch
+torchmetrics
+torchvision
+
+# DINOv3 helper dependencies
+ftfy
+omegaconf
+regex
+submitit
+termcolor
+
 # Development
 pytest
 ruff
