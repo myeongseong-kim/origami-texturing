@@ -11,6 +11,7 @@ origami-texturing/
 |   |-- raw/
 |   `-- processed/
 |-- external/
+|   `-- dinov3/             # facebookresearch/dinov3 submodule
 |-- inputs/
 |-- notebooks/
 |   `-- setup.ipynb
@@ -96,3 +97,28 @@ This project keeps third-party research code under `external/` as git
 submodules. The source trees are not copied into this repository directly;
 instead, this repository tracks the exact upstream commits that the experiments
 are expected to use.
+
+Current submodules:
+
+- `external/dinov3`: `https://github.com/facebookresearch/dinov3.git`, tracking
+  upstream `main`.
+
+Clone this repository with submodules to download this project and its external
+research code:
+
+```powershell
+git clone --recurse-submodules <repo-url>
+```
+
+If the repository is already cloned, initialize submodules with:
+
+```powershell
+git submodule update --init --recursive
+```
+
+To move a submodule to a newer upstream `main` commit, update the submodule and
+commit the changed submodule pointer:
+
+```powershell
+git submodule update --remote external/dinov3
+git add external/dinov3
