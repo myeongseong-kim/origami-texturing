@@ -74,6 +74,24 @@ Use `external/` for local third-party libraries, SDKs, or source checkouts that 
 to be referenced from a local path. The directory itself is versioned, while its
 contents are ignored by git by default.
 
+
+## OpenAI API
+
+For OpenAI API access, copy `.env.example` to `.env` and set your API key:
+
+```powershell
+Copy-Item .env.example .env
+notepad .env
+```
+
+Then use the shared client helper:
+
+```python
+from origami_texturing import get_openai_client
+
+client = get_openai_client()
+```
+
 ## CUDA PyTorch
 
 `requirements.txt` includes `torch` and `torchvision`, but those package names alone
