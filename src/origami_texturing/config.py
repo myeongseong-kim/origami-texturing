@@ -3,6 +3,9 @@
 from dataclasses import dataclass
 from pathlib import Path
 
+from dotenv import load_dotenv
+from openai import OpenAI
+
 from origami_texturing import paths
 
 
@@ -17,3 +20,10 @@ class ProjectConfig:
     external_dir: Path = paths.EXTERNAL_DIR
     inputs_dir: Path = paths.INPUTS_DIR
     output_dir: Path = paths.OUTPUT_DIR
+
+
+def get_openai_client() -> OpenAI:
+    """Return an OpenAI client configured from environment variables."""
+
+    load_dotenv(paths.ROOT_DIR / ".env")
+    return OpenAI()

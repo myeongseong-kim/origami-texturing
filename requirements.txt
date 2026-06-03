@@ -14,3 +14,7 @@ scikit-learn
 # Development
 pytest
 ruff
+python-dotenv
+
+# OpenAI API
+openai

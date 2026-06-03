@@ -38,6 +38,21 @@ python -m pip install -e .
 jupyter lab
 ```
 
+For OpenAI API access, copy `.env.example` to `.env` and set your API key:
+
+```powershell
+Copy-Item .env.example .env
+notepad .env
+```
+
+Then use the shared client helper:
+
+```python
+from origami_texturing import get_openai_client
+
+client = get_openai_client()
+```
+
 ## Notebook Usage
 
 After `python -m pip install -e .`, notebooks can import project code without modifying

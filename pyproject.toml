@@ -14,6 +14,8 @@ dependencies = [
     "matplotlib",
     "numpy",
     "pillow",
+    "python-dotenv",
+    "openai",
 ]
 
 [project.optional-dependencies]
