@@ -12,7 +12,8 @@ origami-texturing/
 |-- external/             # local third-party libraries, kept out of git
 |-- inputs/               # source images for OpenAI image-editing runs
 |-- notebooks/
-|   `-- setup.ipynb       # import smoke test and starter notebook
+|   |-- setup.ipynb
+|   `-- generate_origami_warping.ipynb
 |-- outputs/              # generated figures, meshes, textures, logs
 |-- src/
 |   `-- origami_texturing/
@@ -64,10 +65,10 @@ from origami_texturing import paths
 paths.DATA_DIR
 ```
 
-Use `inputs/` for source images passed to OpenAI image-editing runs, `data/raw/` for
-original datasets, `data/processed/` for derived data, and `outputs/` for generated
-experiment results. These folders contain `.gitkeep` files so the layout is versioned,
-while generated contents remain ignored by git.
+Use `data/raw/mask.png` for the target mask image, `inputs/` for reference images passed
+to OpenAI image-editing runs, and `outputs/` for final experiment results. These folders
+contain `.gitkeep` files so the layout is versioned, while generated contents remain
+ignored by git.
 
 Use `external/` for local third-party libraries, SDKs, or source checkouts that need
 to be referenced from a local path. The directory itself is versioned, while its
