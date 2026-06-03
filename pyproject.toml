@@ -16,6 +16,9 @@ dependencies = [
     "numpy",
     "pillow",
     "scikit-learn",
+    "torch",
+    "torchmetrics",
+    "torchvision",
     "tqdm",
 ]
 
