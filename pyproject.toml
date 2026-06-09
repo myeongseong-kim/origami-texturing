@@ -17,6 +17,7 @@ dependencies = [
     "openai",
     "pillow",
     "python-dotenv",
+    "rembg",
     "scikit-learn",
     "torch",
     "torchmetrics",
