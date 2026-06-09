@@ -10,6 +10,7 @@ matplotlib
 numpy
 pillow
 opencv-python
+rembg[cpu]
 scikit-learn
 tqdm
 
@@ -32,4 +33,4 @@ ruff
 python-dotenv
 
 # OpenAI API
-openaiopenai
+openai
