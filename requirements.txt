@@ -8,6 +8,7 @@ jupyterlab
 matplotlib
 numpy
 pillow
+rembg[cpu]
 opencv-python
 scikit-learn
 
